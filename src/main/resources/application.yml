@@ -1,0 +1,2 @@
+logging.file: ${user.home}/.support-terminal/application-updater.log
+org.springframework.security.level: INFO
