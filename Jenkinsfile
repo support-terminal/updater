@@ -24,6 +24,8 @@ use \\Psr\\Http\\Message\\ResponseInterface as Response;
 
 require \'../../vendor/autoload.php\';
 
+
+
 EOF
 
 echo \'$app = new \\Slim\\App;\' >> ./index.php
