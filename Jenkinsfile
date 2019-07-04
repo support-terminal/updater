@@ -41,6 +41,7 @@ echo \'$app ->run();\' >> ./index.php
 
 
 
+
 ftp -invp $HOST << EOF
 user $USER $PASS
 cd public_html
