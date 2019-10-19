@@ -14,6 +14,9 @@ apply plugin: 'io.spring.dependency-management'
 
 apply from: '../version.gradle'
 
+ext {
+	lombokVersion = '1.18.10'
+}
 
 sourceCompatibility=1.8
 
@@ -25,6 +28,7 @@ repositories {
 dependencies {
 
 	compile('org.springframework.boot:spring-boot-starter')
+	annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
 	compile "commons-io:commons-io:${apacheCommonsIo}"
 	compile "org.dizitart:nitrite:${nitriteDatBaseVersion}"
 	compileOnly("org.projectlombok:lombok")
